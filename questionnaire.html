@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Questionnaire</title>
+    <link rel="stylesheet" href="questionnaire.css" />
+  </head>
+  <body>
+    <div class="step active" id="step-1">
+      <h1>Questionnaire</h1>
+      <p>
+        Help us understand you better. This questionnaire will help us tailor
+        our community and offerings to your needs. Your responses are
+        confidential and will be used solely to improve your experience.
+      </p>
+      <button class="primary" onclick="goToStep(2)">Begin</button>
+    </div>
+
+    <div class="step" id="step-2">
+      <h3>SECTION A - LIFE STAGE & CONTEXT</h3>
+      <h2>Which stage best describes your current life phase?</h2>
+
+      <div class="options">
+        <button onclick="selectOption('building')">
+          Actively building career / enterprise
+        </button>
+        <button onclick="selectOption('established')">
+          Established career / business consolidation
+        </button>
+        <button onclick="selectOption('transitioning')">
+          Transitioning to a slower pace of life
+        </button>
+        <button onclick="selectOption('retired')">
+          Semi-retired / retired
+        </button>
+      </div>
+    </div>
+
+    <div class="step" id="step-3">
+      <h3>SECTION A — LIFE STAGE & CONTEXT</h3>
+      <h2>
+        Is there any context you'd like to share about your current phase of
+        life? (optional)
+      </h2>
+
+      <textarea placeholder="Share any context..."></textarea>
+
+      <div class="actions">
+        <button class="secondary" onclick="goToStep(2)">Back</button>
+        <!-- <button class="primary">Continue</button> -->
+        <button class="primary" onclick="goToStep(2)">Continue</button>
+      </div>
+
+      <div class="step" id="step-2">
+        <h3>SECTION A — LIFE STAGE & CONTEXT</h3>
+        <h2>Which stage best describes your current life phase?</h2>
+
+        <div class="options">
+          <button onclick="selectOption('building')">
+            Actively building career / enterprise
+          </button>
+          <button onclick="selectOption('established')">
+            Established career / business consolidation
+          </button>
+          <button onclick="selectOption('transitioning')">
+            Transitioning to a slower pace of life
+          </button>
+          <button onclick="selectOption('retired')">
+            Semi-retired / retired
+          </button>
+        </div>
+      </div>
+    </div>
+    <footer class="footer-nav">
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="approach.html" class="active">Approach</a>
+        <a href="questionnaire.html">Questionnaire</a>
+        <a href="community.html">Community</a>
+        <a href="founding-circle.html">Founding Circle</a>
+        <a href="partners.html">Partners</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <!-- <div class="footer-logo">
+        <img
+          src="https://www.hillia.in/public/assets/logo.png"
+          alt="Hillia logo"
+        />
+      </div> -->
+    </footer>
+
+    <script src="questionnaire.js"></script>
+  </body>
+</html>

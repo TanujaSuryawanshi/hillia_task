@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #ffffff;
+  color: #1a1a1a;
+}
+
+/* ---------- HOME PAGE ---------- */
+.home {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.image-link img {
+  max-width: 720px;
+  width: 100%;
+  border-radius: 12px;
+  display: block;
+  cursor: pointer;
+}
+
+/* ---------- NAVBAR ---------- */
+.navbar {
+  width: 100%;
+  padding: 24px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.navbar a {
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  color: #222;
+  transition: opacity 0.2s ease;
+}
+
+.navbar a:hover {
+  opacity: 0.6;
+}

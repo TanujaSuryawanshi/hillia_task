@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Contact | Hillia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="contact.css" />
+  </head>
+
+  <body>
+    <section class="contact-page">
+      <h1>Contact</h1>
+
+      <form class="contact-form">
+        <div class="form-group">
+          <label>Name</label>
+          <input type="text" placeholder="Enter your name" />
+        </div>
+
+        <div class="form-group">
+          <label>Reason for reaching out</label>
+          <input
+            type="text"
+            placeholder="Tell us why you're getting in touch"
+          />
+        </div>
+
+        <div class="form-group">
+          <label>Preferred means of communication</label>
+
+          <div class="radio-box">
+            <input type="radio" name="contact" checked onclick="showNone()" />
+            <span>No preference</span>
+          </div>
+
+          <div class="radio-box">
+            <input type="radio" name="contact" onclick="showEmail()" />
+            <span>Email</span>
+          </div>
+
+          <input id="emailField" type="email" placeholder="Enter your email" />
+
+          <div class="radio-box">
+            <input type="radio" name="contact" onclick="showPhone()" />
+            <span>Phone number</span>
+          </div>
+
+          <input
+            id="phoneField"
+            type="tel"
+            placeholder="Enter your phone number"
+          />
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <footer class="footer-nav">
+      <div class="footer-links">
+        <a href="home.html">Home</a>
+        <a href="approach.html">Approach</a>
+        <a href="questionnaire.html">Questionnaire</a>
+        <a href="community.html">Community</a>
+        <a href="founding-circle.html">Founding Circle</a>
+        <a href="partners.html">Partners</a>
+        <a href="contact.html" class="active">Contact</a>
+      </div>
+
+      <img
+        src="https://www.hillia.in/public/assets/logo.png"
+        class="footer-logo"
+      />
+    </footer>
+
+    <script>
+      const email = document.getElementById("emailField");
+      const phone = document.getElementById("phoneField");
+
+      function showEmail() {
+        email.style.display = "block";
+        phone.style.display = "none";
+      }
+
+      function showPhone() {
+        phone.style.display = "block";
+        email.style.display = "none";
+      }
+
+      function showNone() {
+        email.style.display = "none";
+        phone.style.display = "none";
+      }
+
+      showNone();
+    </script>
+  </body>
+</html>
